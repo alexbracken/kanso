@@ -42,7 +42,7 @@ if ( ! function_exists( 'kanso_styles' ) ) :
 		// Register theme stylesheet.
 		wp_register_style(
 			'kanso-style',
-			get_stylesheet_uri(),
+			get_stylesheet_directory_uri() . '/style.css',
 			array(),
 			$version_string
 		);
