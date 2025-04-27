@@ -107,6 +107,24 @@ a:where(:not(.wp-element-button)) {
 	text-decoration: none !important;
 }
 
+/* Simple transition for links */
+a:where(:not(.wp-element-button)) {
+	text-decoration: none !important;
+	background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom / 0 2px;
+	transition: background-size 350ms;
+	padding-bottom: 2px;
+}
+
+a:where(:not(.wp-element-button)):hover,
+a:where(:not(.wp-element-button)):focus-visible {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.underline {
+  padding-bottom: 2px;
+}
+
 .wp-element-button {
 	/* Simple transition for button. */
 	transition: background-color var(--wp--custom--transition--duration) ease-out, color var(--wp--custom--transition--duration) ease-out;
