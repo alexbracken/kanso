@@ -108,8 +108,8 @@ a:where(:not(.wp-element-button)) {
 	text-decoration: none !important;
 	background: linear-gradient(0deg, var(--wp--preset--color--theme-6), var(--wp--preset--color--theme-6)) no-repeat right bottom / 0 var(--bg-h);
 	transition: background-size 350ms;
-	padding-bottom: 2px;
-	--bg-h: 2px;
+	padding-bottom: var(--bg-h);
+	--bg-h: 1px;
 }
 
 a:where(:not(.wp-element-button)):hover,
