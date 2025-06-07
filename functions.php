@@ -126,5 +126,12 @@ function kanso_register_read_more_button_style() {
 			'label' => __( 'Button', 'kanso' ),
 		)
 	);
+	register_block_style(
+		'core/read-more',
+		array(
+			'name'  => 'button-outline',
+			'label' => __( 'Button Outline', 'kanso' ),
+		)
+	);
 }
 add_action( 'init', 'kanso_register_read_more_button_style' );

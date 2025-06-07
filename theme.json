@@ -666,7 +666,7 @@
 			},
 			"core/read-more": { 
 				"variations": {
-					"outline": {
+					"button-outline": {
 						"border": {
 							"color": "var(--wp--preset--color--theme-4)",
 							"width": "1px"
