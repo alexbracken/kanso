@@ -96,3 +96,35 @@ if ( ! function_exists( 'kanso_register_pattern_categories' ) ) :
 endif;
 
 add_action( 'init', 'kanso_register_pattern_categories' );
+
+/**
+ * Enqueue button block styles when read-more block is present
+ */
+function kanso_enqueue_read_more_button_styles() {
+	if ( is_admin() || ! is_singular() ) {
+		return;
+	}
+
+	global $post;
+	
+	// Check if post content contains read-more block
+	if ( has_block( 'core/read-more', $post ) ) {
+		// Enqueue the button block styles
+		wp_enqueue_style( 'wp-block-button' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'kanso_enqueue_read_more_button_styles' );
+
+/**
+ * Register read-more button style variation
+ */
+function kanso_register_read_more_button_style() {
+	register_block_style(
+		'core/read-more',
+		array(
+			'name'  => 'button',
+			'label' => __( 'Button', 'kanso' ),
+		)
+	);
+}
+add_action( 'init', 'kanso_register_read_more_button_style' );
