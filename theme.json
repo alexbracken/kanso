@@ -664,6 +664,29 @@
 					}
 				}
 			},
+			"core/read-more": { 
+				"variations": {
+					"outline": {
+						"border": {
+							"color": "var(--wp--preset--color--theme-4)",
+							"width": "1px"
+						},
+						"spacing": {
+							"padding": {
+								"bottom": "5px",
+								"left": "calc(var(--wp--preset--spacing--20) - 1px)",
+								"right": "calc(var(--wp--preset--spacing--20) - 1px)",
+								"top": "5px"
+							},
+							"blockGap": "var(--wp--preset--spacing--10)",
+							"margin": {
+								"bottom": "var(--wp--preset--spacing--30)",
+								"top": "var(--wp--preset--spacing--30)"
+							}
+						}
+					}
+				}
+			},
 			"core/separator": {
 				"border": {
 					"top": {
