@@ -684,6 +684,7 @@
 								"top": "var(--wp--preset--spacing--30)"
 							}
 						}
+<<<<<<< HEAD
 					},
 					"button": {
 						"border": {
@@ -717,6 +718,8 @@
 							"fontWeight": "500",
 							"lineHeight": "1.9"
 						}
+=======
+>>>>>>> 6a1203066faf6e63697bb189c3318951cb829344
 					}
 				}
 			},
