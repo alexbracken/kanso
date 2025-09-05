@@ -106,7 +106,8 @@ p code {
 /* Simple transition for links */
 p a:where(:not(
 	.wp-element-button,
-	.tag-cloud-link
+	.wp-block-tag-cloud,
+	.wp-block-tag-cloud a
 	))
 	{
 		position: relative;
@@ -120,7 +121,8 @@ p a:where(:not(
 	.wp-element-button,
 	.wp-block-site-logo a,
 	.wp-block-social-link-anchor,
-	.tag-cloud-link
+	.wp-block-tag-cloud,
+	.wp-block-tag-cloud a
 	))::after
 	{
 		content: '';
@@ -138,7 +140,8 @@ p a:where(:not(
 	.wp-element-button,
 	.wp-block-site-logo a,
 	.wp-block-social-link-anchor,
-	.tag-cloud-link
+	.wp-block-tag-cloud,
+	.wp-block-tag-cloud a
 	)):hover::after {
 		height: 100%;
 
