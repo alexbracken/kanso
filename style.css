@@ -158,7 +158,7 @@ p a:where(:not(
 }
 
 /* Add class for manual link animation */
-.animate-link{
+.animate-link a{
 	position: relative;
 	text-decoration: none;
 	display: inline-block;
@@ -166,7 +166,7 @@ p a:where(:not(
 	transition: color ease 0.3s;
 }
 
-.animate-link::after{
+.animate-link a::after{
 	content: '';
 	position: absolute;
 	z-index: -1;
@@ -178,7 +178,7 @@ p a:where(:not(
 	transition: all ease 0.3s;
 }
 
-.animate-link:hover::after{
+.animate-link a:hover::after{
 	height: 100%;
 }
 
