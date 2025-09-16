@@ -147,13 +147,21 @@ p a:where(:not(
 
   }
 
-.wp-element-button {
-	/* Simple transition for button. */
-	transition: background-color var(--wp--custom--transition--duration) ease-out, color var(--wp--custom--transition--duration) ease-out;
+.wp-element-button{
+	transition: background-color var(--wp--custom--transition--duration, 200ms) ease-out, color var(--wp--custom--transition--duration, 200ms) ease-out, transform var(--wp--custom--transition--duration, 200ms) cubic-bezier(.4,0,.2,1);
 
 	@media (prefers-reduced-motion: reduce) {
 		/* Reduce motion per user preference. */
 		transition: none;
+	}
+}
+
+.wp-element-button:active {
+	transform: scale(0.95);
+
+	@media (prefers-reduced-motion: reduce) {
+		/* Reduce motion per user preference. */
+		transform: none;
 	}
 }
 
